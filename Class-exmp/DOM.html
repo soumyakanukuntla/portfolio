@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .light{
+            background-color: red;
+            color: green;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello Javascript</h1>
+    <button id="btn">Submit</button>
+    
+    <script>
+
+    const h1 =document.getElementById("heading");
+    const bttn =document.getElementById("btn");
+
+        bttn.addEventListener('click', function() {
+            h1.textContent  = "bye";
+            document.body.style.backgroundColor = 'red';
+            document.body.style.color = 'white';
+        let newcolor = Math.round(Math.random()*1000000) 
+        document.body.style.backgroundColor = "#" +newcolor; 
+        document.body.classList.toggle('dark');
+        });
+         
+    </script>
+</body>
+</html>

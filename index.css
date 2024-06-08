@@ -1,0 +1,38 @@
+body {
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: white;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(146, 26, 66);
+}
+ label {
+    font-size: 25px;
+    color: rgb(146, 26, 66);
+}
+ input {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 2px solid salmon;
+  outline: none;
+  margin-bottom: 10px;
+} 
+
+button  {
+  background-color: rgb(146, 26, 66) ;
+  color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+ font-weight: bold;
+ margin-bottom: 15px;
+}

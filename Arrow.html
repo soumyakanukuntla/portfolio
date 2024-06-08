@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button >Submit</button>
+    <p></p>
+    <p></p>
+    <!-- for your undrestand if we want to access id  then you see below -->
+    <span id="sam">souju</span>  <!-- if you want to access id we need to use getElementById  -->
+    <script>
+        var p =  document.querySelector("p");   //Iam taking p tag element
+        var button =  document.querySelector("button");    //also taking button element
+        var some = document.getElementById("sam");
+        
+        
+        button.onclick = () => {
+            p.innerHTML = "Hello Javascript";
+            some.innerHTML = "Soujanya Kanukuntla";
+        }
+    </script>
+</body>
+</html>
+
+

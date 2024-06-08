@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main"></div>
+    <script>
+        const fruits = [
+            {
+                name:"ornage",
+                price:50 
+            },
+            {
+                name:"mongo",
+                price:280 
+            }
+        ]
+        fruits.forEach((f)=>{
+            const MYDIV = document.createElement('div');
+            MYDIV.classList.add('fruit');
+            const title = document.createElement("h1");
+            title.textContent = f.name;
+            const price= document.createElement("p");
+            price.textContent = "$" + f.price
+            MYDIV.append(title,price);
+            document.getElementById('main').appendChild(MYDIV);
+        })
+    </script>
+</body>
+</html>
